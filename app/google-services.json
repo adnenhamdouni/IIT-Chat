@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "951505015019",
-    "firebase_url": "https://isgc-firebase-dad92.firebaseio.com",
-    "project_id": "isgc-firebase-dad92",
-    "storage_bucket": "isgc-firebase-dad92.appspot.com"
+    "project_number": "90704167521",
+    "firebase_url": "https://iit-gr3-78b95.firebaseio.com",
+    "project_id": "iit-gr3-78b95",
+    "storage_bucket": "iit-gr3-78b95.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:951505015019:android:e71322f7c5cb30f2",
+        "mobilesdk_app_id": "1:90704167521:android:73e94c547aec1cf4",
         "android_client_info": {
           "package_name": "tn.itskills.android.firebase"
         }
       },
       "oauth_client": [
         {
-          "client_id": "951505015019-6aejmg591cj054v9cnei64i0h2sm37s8.apps.googleusercontent.com",
+          "client_id": "90704167521-2a3141pts3dudm0o23thdl740fhke3s5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC2sDHw9vobEqDTb97gmJqFtV9jQ4cvzAw"
+          "current_key": "AIzaSyDxwLTJWebqHRfsiZhZw2XjAD4RrCIcOUk"
         }
       ],
       "services": {
@@ -32,7 +32,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "951505015019-6aejmg591cj054v9cnei64i0h2sm37s8.apps.googleusercontent.com",
+              "client_id": "90704167521-2a3141pts3dudm0o23thdl740fhke3s5.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

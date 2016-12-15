@@ -1,10 +1,12 @@
 package tn.itskills.android.firebase.models;
 
+import java.io.Serializable;
+
 /**
  * Created by adnenhamdouni on 25/11/2016.
  */
 
-public class User {
+public class User implements Serializable{
 
     private String username;
 
