@@ -1,4 +1,4 @@
-package tn.itskills.android.isgc_firebase;
+package tn.itskills.android.firebase;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import android.widget.EditText;
 
 import com.google.firebase.auth.FirebaseUser;
 
-import tn.itskills.android.isgc_firebase.models.User;
+import tn.itskills.android.firebase.models.User;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener{
 

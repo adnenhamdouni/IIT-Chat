@@ -1,4 +1,4 @@
-package tn.itskills.android.isgc_firebase.models;
+package tn.itskills.android.firebase.models;
 
 /**
  * Created by adnenhamdouni on 25/11/2016.

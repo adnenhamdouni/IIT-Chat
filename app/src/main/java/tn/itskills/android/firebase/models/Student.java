@@ -1,4 +1,4 @@
-package tn.itskills.android.isgc_firebase.models;
+package tn.itskills.android.firebase.models;
 
 import java.io.Serializable;
 

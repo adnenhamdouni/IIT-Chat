@@ -1,4 +1,4 @@
-package tn.itskills.android.isgc_firebase;
+package tn.itskills.android.firebase;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,7 +11,7 @@ import android.widget.EditText;
 import java.util.HashMap;
 import java.util.Map;
 
-import tn.itskills.android.isgc_firebase.models.Post;
+import tn.itskills.android.firebase.models.Post;
 
 public class NewPostActivity extends BaseActivity {
 

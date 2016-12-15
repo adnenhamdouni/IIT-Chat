@@ -1,4 +1,4 @@
-package tn.itskills.android.isgc_firebase;
+package tn.itskills.android.firebase;
 
 import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;

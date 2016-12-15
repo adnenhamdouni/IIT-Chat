@@ -1,4 +1,4 @@
-package tn.itskills.android.isgc_firebase;
+package tn.itskills.android.firebase;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import tn.itskills.android.isgc_firebase.models.Post;
+import tn.itskills.android.firebase.models.Post;
 
 //1. implements ValueEventListener - this will add OnDataChanged and onCanceled methods
 public class HomeActivity extends AppCompatActivity implements ValueEventListener {

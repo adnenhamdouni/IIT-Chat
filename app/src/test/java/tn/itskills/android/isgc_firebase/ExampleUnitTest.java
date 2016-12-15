@@ -1,4 +1,4 @@
-package tn.itskills.android.isgc_firebase;
+package tn.itskills.android.firebase;
 
 import org.junit.Test;
 
