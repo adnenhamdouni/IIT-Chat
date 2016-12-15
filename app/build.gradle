@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.1"
     defaultConfig {
-        applicationId "tn.itskills.android.isgc_firebase"
+        applicationId "tn.itskills.android.firebase"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1

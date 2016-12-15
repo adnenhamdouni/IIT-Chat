@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "75171878845",
-    "firebase_url": "https://devfest-16-bb4ed.firebaseio.com",
-    "project_id": "devfest-16-bb4ed",
-    "storage_bucket": "devfest-16-bb4ed.appspot.com"
+    "project_number": "951505015019",
+    "firebase_url": "https://isgc-firebase-dad92.firebaseio.com",
+    "project_id": "isgc-firebase-dad92",
+    "storage_bucket": "isgc-firebase-dad92.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:75171878845:android:99b300235daa428d",
+        "mobilesdk_app_id": "1:951505015019:android:e71322f7c5cb30f2",
         "android_client_info": {
-          "package_name": "tn.itskills.android.devfest16"
+          "package_name": "tn.itskills.android.isgc_firebase"
         }
       },
       "oauth_client": [
         {
-          "client_id": "75171878845-n69b7cumjmnmhjvgg6vn20to8p5e8rb7.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "tn.itskills.android.devfest16",
-            "certificate_hash": "BFCEB9203E3D34E4929CA5A94F36F22DB42434F5"
-          }
-        },
-        {
-          "client_id": "75171878845-afcv4f373o93rdskhe95aqt07lu37eqf.apps.googleusercontent.com",
+          "client_id": "951505015019-6aejmg591cj054v9cnei64i0h2sm37s8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC7SyyfQEkUE5lx4tP39D0_LRzFV3asZa4"
+          "current_key": "AIzaSyC2sDHw9vobEqDTb97gmJqFtV9jQ4cvzAw"
         }
       ],
       "services": {
@@ -40,7 +32,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "75171878845-afcv4f373o93rdskhe95aqt07lu37eqf.apps.googleusercontent.com",
+              "client_id": "951505015019-6aejmg591cj054v9cnei64i0h2sm37s8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

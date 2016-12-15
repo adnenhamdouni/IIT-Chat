@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="tn.itskills.android.isgc_firebase">
+    package="tn.itskills.android.firebase">
 
     <application
         android:allowBackup="true"
