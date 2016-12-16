@@ -3,6 +3,7 @@ package tn.itskills.android.firebase;
 import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 /**
@@ -33,14 +34,14 @@ public class BaseActivity extends AppCompatActivity {
     * getUid from firebaseAuth instance
      */
     public String getUid() {
-        return null;
+        return FirebaseAuth.getInstance().getCurrentUser().getUid();
     }
 
     /*
     * getCurrentUser from firebaseAuth instance
     */
     public FirebaseUser getUser() {
-        return null;
+        return FirebaseAuth.getInstance().getCurrentUser();
     }
 
 }

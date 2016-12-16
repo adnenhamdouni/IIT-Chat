@@ -4,15 +4,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -20,7 +22,7 @@ import java.util.ArrayList;
 import tn.itskills.android.firebase.models.Post;
 
 //1. implements ValueEventListener - this will add OnDataChanged and onCanceled methods
-public class HomeActivity extends AppCompatActivity implements ValueEventListener {
+public class HomeActivity extends BaseActivity implements ValueEventListener {
 
     private TextView mPostMessage;
 
@@ -28,6 +30,7 @@ public class HomeActivity extends AppCompatActivity implements ValueEventListene
     private ArrayList<Post> mPosts;
 
     //2.Add FirebaseDatabase mDatabase object
+    private DatabaseReference mDatabase;
 
 
     @Override
@@ -68,14 +71,16 @@ public class HomeActivity extends AppCompatActivity implements ValueEventListene
     private void initFirebase() {
 
         //FirebaseDatabase mDatabase reference
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         //Create new mDatabase.addValueEventListener
+        mDatabase.addValueEventListener(this);
 
 
     }
 
     /*
-    * implement onDataChange
+    * implement onDataChange/onCancelled using ValueEventListener
      */
 
     @Override
@@ -89,6 +94,16 @@ public class HomeActivity extends AppCompatActivity implements ValueEventListene
         // 4. foreach DataSnapshot keys into dataSnapshot.child("posts").getChildren()
         //here we need to getValue from keys and Serializable data into mPost object using Post.class
         //then add it to mPosts list, Finally, append mPost.author and mPost.title into mPostMessage. "\n"
+
+        for (DataSnapshot keys : dataSnapshot.child("posts").getChildren()) {
+            mPost = keys.getValue(Post.class);
+            mPosts.add(mPost);
+            mPostMessage.append(mPost.author + ": "+mPost.title+ "\n");
+
+
+        }
+
+
 
 
     }
@@ -106,6 +121,7 @@ public class HomeActivity extends AppCompatActivity implements ValueEventListene
     private void signOut() {
 
         // signOut using FirebaseAuth instance
+        FirebaseAuth.getInstance().signOut();
 
 
         // Back to MainActivity

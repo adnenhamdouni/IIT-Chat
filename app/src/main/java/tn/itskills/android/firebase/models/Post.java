@@ -33,6 +33,8 @@ public class Post implements Serializable{
 
     @Exclude
     public Map<String, Object> toMap() {
+
+        //instanciate new hashmap and put values
         HashMap<String, Object> result = new HashMap<>();
         result.put("uid", uid);
         result.put("author", author);
