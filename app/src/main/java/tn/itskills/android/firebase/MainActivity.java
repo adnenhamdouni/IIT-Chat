@@ -145,6 +145,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
             public void onComplete(@NonNull Task<AuthResult> task) {
                 hideProgressDialog();
                 if(task.isSuccessful()) {
+                    FirebaseUser firebaseUser = task.getResult().getUser();
+                    onAuthSuccess(firebaseUser);
                     Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                     startActivity(intent);
                     finish();
@@ -174,11 +176,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         // 5. createUserWithEmailAndPassword with mAuth - use addOnCompleteListener / hideProgressDialog
         // // task.getResult().getUser() andcall onAuthSuccess if task.isSuccessful()
 
-        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        mAuth.createUserWithEmailAndPassword(email, password).
+                addOnCompleteListener(
+                        new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 hideProgressDialog();
                 if(task.isSuccessful()) {
+                    FirebaseUser firebaseUser = task.getResult().getUser();
+                    onAuthSuccess(firebaseUser);
                     Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                     startActivity(intent);
                     finish();
@@ -196,6 +202,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         User user = new User(username);
 
         // Write new user into child users/Uid - setValue new User
+        mDatabase.child("users").child(getUid()).setValue(user);
 
         // Go to MainActivity
         startActivity(new Intent(MainActivity.this, HomeActivity.class));
